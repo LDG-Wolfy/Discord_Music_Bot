@@ -35,7 +35,7 @@ async def on_message(message):
         embed.add_field(name='~선택', value='~선택 A B C 이런식으로 사용가능 [여러개 가능]', inline=False)
         embed.add_field(name='~입장', value='음성채팅에 있어야 사용 가능하며 음성챗 으로 불러오기', inline=False)
         embed.add_field(name='~나가', value='음성채팅에서 내보내기', inline=False)
-        embed.set_footer(text= '설명 끝')
+        embed.set_footer(text= '설명 끝') 
 
         await client.send_message(channel, embed= embed)
 
