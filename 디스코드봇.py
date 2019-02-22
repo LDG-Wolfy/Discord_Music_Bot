@@ -107,6 +107,23 @@ async def on_message(message):
         id = message.server.id
         players[id].stop()
 
+    #youtube 예제
+    import ffmpeg
+import os
+import subprocess
+import pytube
 
+url = input("url 주소를 입력하세요.");
+print(url);
+
+yt = pytube.YouTube(url);
+vids = yt.streams.all()
+
+#영상 형식 리스트 확인
+for i in range(len(vids)):
+    print(i, ',', vids[i])
+
+parent_dir =  "절대 경로\"
+vids[0].download(parent_dir)
 
 client.run('NTM5MzgxOTkxODI1NDczNTQ2.DzBiOw.skHzixYJy7ZUgk3aTcNX10N5Rxs')
