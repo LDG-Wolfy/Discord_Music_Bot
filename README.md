@@ -18,3 +18,8 @@ Now command
   - ~pause : 재생중인 음악 일시정지
   - ~stop : 재생중인 음악 종료
   - ~선택 <A, B, C> : 선택하기 어려울때 사용
+
+2019-02-25 : 에러 발생
+Error Code : Error in the pull function.
+             Read error
+             The specified session has been invalidated for some reason.
