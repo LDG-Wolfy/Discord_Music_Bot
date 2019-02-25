@@ -89,7 +89,11 @@ async def on_message(message):
         url = msg[1]
         print(url)
         player = await voice_client.create_ytdl_player(url)
-        print(player)
+        print("유투브 주소",player.url)
+        ydl_opts = {}
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+        print("다운로드 중인 주소",player.download_url)
         #재생 음악 설명
         await client.send_message(message.channel, "음악을 재생합니다.")
         players[server.id] = player
