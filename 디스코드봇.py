@@ -1,9 +1,13 @@
+import youtube_dl
 import discord
 import asyncio
 import random
-import youtube_dl
+import ffmpeg
+import os
+import subprocess
 
 from discord import Embed
+from pytube import YouTube
 
 client = discord.Client()
 #유튜브용으로 사용하는것
@@ -35,7 +39,7 @@ async def on_message(message):
         embed.add_field(name='~선택', value='~선택 A B C 이런식으로 사용가능 [여러개 가능]', inline=False)
         embed.add_field(name='~입장', value='음성채팅에 있어야 사용 가능하며 음성챗 으로 불러오기', inline=False)
         embed.add_field(name='~나가', value='음성채팅에서 내보내기', inline=False)
-        embed.set_footer(text= '설명 끝') 
+        embed.set_footer(text= '설명 끝')
 
         await client.send_message(channel, embed= embed)
 
@@ -83,11 +87,18 @@ async def on_message(message):
         voice_client = client.voice_client_in(server)
         msg = message.content.split(" ")
         url = msg[1]
+        print(url)
         player = await voice_client.create_ytdl_player(url)
+        print(player)
         #재생 음악 설명
         await client.send_message(message.channel, "음악을 재생합니다.")
         players[server.id] = player
         player.start()
+
+    # 사용했으니 오류가 뜬다.
+    # ydl_opts = {}
+    # with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    #     ydl.download([url])
 
     #두번째 정지
     if message.content.startswith("~pause"):
@@ -106,24 +117,5 @@ async def on_message(message):
         await client.send_message(message.channel, "음악을 종료합니다.")
         id = message.server.id
         players[id].stop()
-
-    #youtube 예제
-    import ffmpeg
-import os
-import subprocess
-import pytube
-
-url = input("url 주소를 입력하세요.");
-print(url);
-
-yt = pytube.YouTube(url);
-vids = yt.streams.all()
-
-#영상 형식 리스트 확인
-for i in range(len(vids)):
-    print(i, ',', vids[i])
-
-parent_dir =  "절대 경로\"
-vids[0].download(parent_dir)
 
 client.run('NTM5MzgxOTkxODI1NDczNTQ2.DzBiOw.skHzixYJy7ZUgk3aTcNX10N5Rxs')
