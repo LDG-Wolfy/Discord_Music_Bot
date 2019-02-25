@@ -6,6 +6,9 @@ Date : 2019 - 01 - 28 <br>
 Launge : Python <br>
 Sample : Discord Develpor, Youtbe 섹시베이비 <br>
 
+확인해야할것
+1. youtube_dl -> cmd -> python -m pip install -U youtube_dl
+
 Update : 2019 - 01- 30
 Now command 
   - ~명령어 : 사용할 수 있는 명령어 확인
