@@ -122,4 +122,4 @@ async def on_message(message):
         id = message.server.id
         players[id].stop()
 
-client.run('NTM5MzgxOTkxODI1NDczNTQ2.DzBiOw.skHzixYJy7ZUgk3aTcNX10N5Rxs')
+client.run('')
