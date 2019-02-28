@@ -4,7 +4,7 @@ Subject : Music Bot
 
 Date : 2019 - 01 - 28 <br>
 Launge : Python <br>
-Sample : Discord Develpor, Youtbe 섹시베이비 <br>
+Sample : Discord Develpor, Youtbe 섹시베이비, YouTube Lucas <br>
 
 확인해야할것
 1. youtube_dl -> cmd -> python -m pip install -U youtube_dl
@@ -23,3 +23,7 @@ Now command
 Error Code : Error in the pull function.
              Read error
              The specified session has been invalidated for some reason.
+             
+Answer : 5초에 한번씩 Url 다시 받아오기 해결 및 Download로 해결완료             
+             
+2019-02-28 : Error 해결 완료
