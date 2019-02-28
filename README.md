@@ -9,6 +9,8 @@ Site : https://discordpy.readthedocs.io/en/latest/api.html#discord.VoiceClient.c
        https://www.youtube.com/channel/UCR-zOCvDCayyYy1flR5qaAg/videos
        https://www.bogotobogo.com/VideoStreaming/YouTube/youtube-dl-embedding.php
        https://gracefullight.github.io/2018/03/26/download-music-video-with-youtube-dl/
+       https://github.com/Rapptz/discord.py/issues/315
+       https://m.blog.naver.com/turnbf/221371140888
 
 확인해야할것
 1. youtube_dl -> cmd -> python -m pip install -U youtube_dl
