@@ -5,6 +5,10 @@ Subject : Music Bot
 Date : 2019 - 01 - 28 <br>
 Launge : Python <br>
 Sample : Discord Develpor, Youtbe 섹시베이비, YouTube Lucas <br>
+Site : https://discordpy.readthedocs.io/en/latest/api.html#discord.VoiceClient.create_ytdl_player
+       https://www.youtube.com/channel/UCR-zOCvDCayyYy1flR5qaAg/videos
+       https://www.bogotobogo.com/VideoStreaming/YouTube/youtube-dl-embedding.php
+       https://gracefullight.github.io/2018/03/26/download-music-video-with-youtube-dl/
 
 확인해야할것
 1. youtube_dl -> cmd -> python -m pip install -U youtube_dl
