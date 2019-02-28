@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 import youtube_dl
 import discord
 import asyncio
@@ -17,8 +18,8 @@ players = {}
 async def on_ready():
     # 실행시 나오는 말
     print("Start")
-    print(client.user.name)
-    print(client.user.id)
+    # print(client.user.name)
+    # print(client.user.id)
     print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
 
     # 봇의 현재 상태
@@ -122,4 +123,4 @@ async def on_message(message):
         id = message.server.id
         players[id].stop()
 
-client.run('')
+client.run('NTM5MzgxOTkxODI1NDczNTQ2.D1l4oA.onxvzVKOOC4LQjmpZEeurO48_Tw')
